@@ -128,7 +128,7 @@ span {
 .image {
   width: 75%;
   border-radius: 22px 0px 0px 22px;
-  background-image: url(/res/images/current.jpg);
+  background-image: url(res/images/current.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
