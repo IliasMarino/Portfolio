@@ -16,12 +16,3 @@ References and Resources
 
 - codrops.com
 
----
-Old/First Sitemap: <br>
-
-[![forthebadge](https://forthebadge.com/images/badges/designed-in-ms-paint.svg)](https://forthebadge.com) 
- 
-![Old Stiemap](https://i.imgur.com/33ubi1m.png)
-
----
-
