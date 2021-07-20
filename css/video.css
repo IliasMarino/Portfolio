@@ -1,0 +1,33 @@
+body {
+  max-width: 100%;
+  background-color: var(--bg);
+}
+
+.cntri {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-container {
+  flex-grow: 1;
+  max-width: 70rem;
+  max-height: 40rem;
+  grid-gap: 1em;
+}
+
+video {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-y: visible;
+  }
+  video {
+    border-radius: 0rem;
+  }
+}

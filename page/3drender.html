@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- Meta -->
+  <title>3D Rendering</title>
+  <meta name="theme-color" content="#0e0e0e" />
+  <meta name="author" name="Ilias" />
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="google" content="notranslate">
+
+  <link rel="icon" href="/res/icons/logo.png"/>
+
+  <link rel="stylesheet" href="/css/main.css"/>
+  <link rel="stylesheet" href="/css/3drender.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4S7K69JXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S4S7K69JXM');
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+  
+  <script async src="/js/theme.js"></script>
+</head>
+
+<body class="light">
+  <nav class="navbarmenu" id="shadow"> 
+    <span class="navbar-toggle down" id="js-navbar-toggle">
+      <div class="menu bodymovinanim"></div>    
+    </span> 
+          
+    <img class="hidden" id="navabout" src="/res/icons/logo-back.png" onclick="goBack()" style="width:2.7rem" alt="logo"/>
+  </nav>
+
+  <nav class="navbar off" id="animation">
+
+
+    <img class="hidded" src="/res/icons/logo-back.png" onclick="goBack()" style="width:3rem" alt="logo"/>
+
+    <ul class="main-nav sibling-fade" id="js-menu">
+      <li>
+        <a href="/index.html" class="nav-links hreftext">Start</a>
+      </li>
+      <li>
+        <a href="/page/work.html" class="nav-links hreftext">Projekte</a>
+      </li>
+      <li>
+        <a href="/page/hobbies.html" class="nav-links hreftext">Hobbys</a>
+      </li>
+      <li>
+        <a href="/page/about.html" class="nav-links hreftext">Über mich</a>
+      </li>
+      <li>
+        <a href="/page/contact.html" class="nav-links hreftext">Kontakt</a>
+      </li>
+    </ul>
+
+  <script>
+    let mainNav = document.getElementById("js-menu");
+    let navbar = document.getElementById("animation");
+    let navbarmenu = document.getElementById("shadow");
+    let navBarToggle = document.getElementById("js-navbar-toggle");
+
+    navBarToggle.addEventListener("click", function() {
+    mainNav.classList.toggle("active");
+    navbar.classList.toggle("on");
+    navbarmenu.classList.toggle("hideshadow");
+    });
+  </script> 
+
+  <script>
+    let iconMenu = document.querySelector('.bodymovinanim');
+
+    let animationMenu = bodymovin.loadAnimation({
+      container: iconMenu,
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: "https://raw.githubusercontent.com/thesvbd/Lottie-examples/master/assets/animations/menu.json"
+    });
+
+    var directionMenu = 1;
+      iconMenu.addEventListener('click', (e) => {
+      animationMenu.setDirection(directionMenu);
+      animationMenu.play();
+      directionMenu = -directionMenu;
+    });
+  </script>
+
+  </nav>
+
+
+
+  <div class="cntri1">
+    <div class="grid-container gridFix">
+      <div class="title">
+        <a class="bitTitles">3D Rendering</a>
+      </div>
+    </div>  
+  </div>
+  
+  <div class="hero-image"></div>
+  
+  <div class="cntri">
+    <div class="grid-container bottomContainer">
+  
+      <div class="port card">
+        <div class="image imgurl4"></div>
+        <div>
+          <div class="divider"></div>
+          <a class="cardtitle extraFont">Phone</a>
+        </div>
+      </div>
+  
+      <div class="store card">
+        <div class="image imgurl3"></div>
+        <div>
+          <div class="divider"></div>
+          <a class="cardtitle extraFont">Phone</a>
+        </div>
+      </div>
+  
+      <div class="double card">
+        <div class="image imgurl2"></div>
+        <div>
+          <div class="divider"></div>
+          <a class="cardtitle extraFont">Phone</a>
+        </div>
+      </div>  
+      
+      <div class="vending card">
+        <div class="image imgurl1"></div>
+        <div>
+          <div class="divider"></div>
+          <a class="cardtitle extraFont">Phone</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

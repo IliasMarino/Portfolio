@@ -1,0 +1,231 @@
+<!DOCTYPE html><html>
+<head lang="en">
+    <!-- Meta -->
+    <title>Projects</title>
+    <meta name="theme-color" content="#fff" />
+    <meta name="author" name="Ilias" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="google" content="notranslate">
+
+    <link rel="icon" href="/res/icons/logo.png" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/work.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600&display=swap" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4S7K69JXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S4S7K69JXM');
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+
+  <script async src="/js/theme.js"></script>
+</head>
+
+<body class="light">
+<nav class="navbarmenu" id="shadow"> 
+  <span class="navbar-toggle down" id="js-navbar-toggle">
+    <div class="menu bodymovinanim"></div>    
+  </span>     
+  <img class="hidden" id="navabout" src="/res/icons/logo.png" onclick="goBack()" style="width:2.7rem" alt="logo"/>
+</nav>
+
+<nav class="navbar off" id="animation">
+
+  <img class="hidded" src="/res/icons/logo.png" onclick="goBack()" style="width:3rem" alt="logo"/>
+
+  <ul class="main-nav sibling-fade" id="js-menu">
+    <li>
+      <a href="/page/en/home.html" class="nav-links hreftext">Home</a>
+    </li>
+    <li>
+      <a href="/page/en/work.html" class="nav-links hreftext currentsite">Projects</a>
+    </li>
+    <li>
+      <a href="/page/en/hobbies.html" class="nav-links hreftext">Skills</a>
+    </li>
+    <li>
+      <a href="/page/en/about.html" class="nav-links hreftext">About</a>
+    </li>
+    <li>
+      <a href="/page/en/contact.html" class="nav-links hreftext">Contact</a>
+    </li>
+  </ul>
+
+<script>
+  let mainNav = document.getElementById("js-menu");
+  let navbar = document.getElementById("animation");
+  let navbarmenu = document.getElementById("shadow");
+  let navBarToggle = document.getElementById("js-navbar-toggle");
+
+  navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+  navbar.classList.toggle("on");
+  navbarmenu.classList.toggle("hideshadow");
+  });
+</script> 
+
+<script>
+  let iconMenu = document.querySelector('.bodymovinanim');
+
+  let animationMenu = bodymovin.loadAnimation({
+    container: iconMenu,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: "https://raw.githubusercontent.com/thesvbd/Lottie-examples/master/assets/animations/menu.json"
+  });
+
+  var directionMenu = 1;
+    iconMenu.addEventListener('click', (e) => {
+    animationMenu.setDirection(directionMenu);
+    animationMenu.play();
+    directionMenu = -directionMenu;
+  });
+</script>
+
+</nav>
+
+<div class="cntri1">
+  <div class="grid-container gridFix">
+    <div class="title">
+      <a class="bitTitles">Projects</a>
+    </div>
+  </div>  
+</div>
+
+<div class="hero-image"></div>
+
+<div class="cntri">
+  <div class="grid-container bottomContainer">
+
+
+    <div class="port card">
+      <div class="image imgurl4"></div>
+      <div>
+        <a class="cardtitle extraFont">Portfolio</a>
+        <div class="divider"></div>
+      </div>
+
+      <div class="the_great_expansion" id="theExpanse4" >
+        <p>
+          <span id="dots4"></span>
+          <span id="more4" class="extraFont">
+            Towards the end of 2019, using this project I began teaching myself to build a website. In a span of two weeks, while learning how to create it I was able to complete the first version. After completing the first one, I began to work on the second  and subsequently the third version.
+            <br><br>
+            Visit first site <a class="link extraFont" href="https://oldporty.netlify.app/">Here</a>.
+            <br>
+            Visit second site <a class="link extraFont" href="https://isthisgood.netlify.app/">Here</a>.
+          </span>
+        </p>
+      </div>
+      <div class="readexpand" id="IDreadexpand">
+        <div class="buttonHolder">
+          <div class="buttonPress" onclick="myFunction4()" id="myBtn4">Read more</div>
+
+          <img class="arrow" src="/res/icons/index/arrow.svg" alt="arrow">
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="store card">
+      <div class="image imgurl3"></div>
+      <div>
+        <a class="cardtitle extraFont">Store</a>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="the_great_expansion" id="theExpanse3" >
+        <p>
+          <span id="dots3"></span>
+          <span id="more3" class="extraFont">
+            The first website I ever made, so before looking into it too much, consider it was made in one day by someone who never wrote a line of html before.
+            <br>
+            Originaly it stared out as a testing-ground for me to play with but quickly evolved into a simple looking store page.
+            <br><br>
+            Visit it <a class="link extraFont" href="https://coffeee-shop.netlify.app/">Here</a>.
+          </span>
+        </p>
+      </div>
+
+      <div class="readexpand" id="IDreadexpand">
+        <div class="buttonHolder">
+          <div class="buttonPress" onclick="myFunction3()" id="myBtn3">Read more</div>
+
+          <img class="arrow" src="/res/icons/index/arrow.svg" alt="arrow">
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="double card">
+      <div class="image imgurl2"></div>
+      <div>
+        <a class="cardtitle extraFont">Double or Nothing</a>
+        <div class="divider"></div>
+      </div>
+      <div class="the_great_expansion" id="theExpanse2" >
+        <p>
+          <span id="dots2"></span>
+          <span id="more2" class="extraFont">
+            A mini game written in java. 
+            <br><br>
+            Download it <a class="link extraFont" href="https://ilias-drive.mycozy.cloud/public?sharecode=Y431Eepm7Gsj">Here</a>.
+          </span>
+        </p>
+      </div>
+
+      <div class="readexpand" id="IDreadexpand">
+        <div class="buttonHolder">
+          <div class="buttonPress" onclick="myFunction2()" id="myBtn2">Read more</div>
+
+          <img class="arrow" src="/res/icons/index/arrow.svg" alt="arrow">
+        </div>
+      </div>
+    </div>  
+    
+    <div class="vending card">
+      <div class="image imgurl1"></div>
+      <div>
+        <a class="cardtitle extraFont">Vending Machine</a>
+        <div class="divider"></div>
+      </div>
+      <div class="the_great_expansion" id="theExpanse1" >
+        <p>
+          <span id="dots1"></span>
+          <span id="more1" class="extraFont">
+            A school assignment, written in java.
+          </span>
+        </p>
+      </div>
+
+      <div class="readexpand" id="IDreadexpand">
+        <div class="buttonHolder">
+          <div class="buttonPress " onclick="myFunction1()" id="myBtn1">Read more</div>
+
+          <img class="arrow" src="/res/icons/index/arrow.svg" alt="arrow">
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+  
+<script src="/js/cards.js"></script>
+
+</body>
+</html>

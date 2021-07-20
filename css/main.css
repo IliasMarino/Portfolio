@@ -1,0 +1,449 @@
+@font-face {
+  font-family: 'arr_sans';
+  src: url('/res/font/productsans-regular-webfont.woff2') format('woff2'),
+       url('/res/font/productsans-regular-webfont.woff') format('woff'),
+       url('/res/ProductSans-Regular.ttf')  format('truetype'); 
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*-------------THEMES-------------------*/
+
+:root {
+  --light0: rgb(255, 255, 255); /*background*/
+  --light0nav: rgba(255, 255, 255, 0.71); /*navbar*/
+  --light1: rgb(240, 240, 240);
+  --light2: rgb(235, 237, 236);
+  --light3: rgb(204, 204, 204);
+  --lighttext: rgb(41, 41, 41);
+  --lighttext2: rgb(62, 62, 62);
+  --lightgreen: rgb(230, 244, 234);
+  --lifhtor: rgb(138, 138, 138);
+  
+  --greentext: rgb(51, 169, 86);
+  --bluetext: rgb(74, 144, 226);
+  
+  --dark0: rgb(18, 18, 18);
+  --dark1: rgb(39, 39, 39);
+  --dark1nav: rgba(39, 39, 39, 0.71); /*navbar*/
+  --dark2: rgb(51, 51, 51);
+  --dark3: rgb(41, 41, 41);
+  --dark4: rgb(14, 14, 14); 
+  --dark5: rgb(20, 20, 20);
+  
+  --darktext0: rgb(238, 238, 238);
+  --darktext1: rgb(238, 238, 238);
+  --darkgreen: rgba(50, 90, 34, 0.651);
+  --darkor: rgb(238, 238, 238);
+  
+  /*contacts*/
+  --hover1: rgb(236, 236, 236);
+  --focus1: rgb(219, 219, 219);
+  --hover2: rgb(44, 44, 44);
+  --focus2: rgb(54, 54, 54);
+  /*work*/
+  --bunnon3: rgb(231, 231, 231);
+  --hover3: rgb(218, 218, 218);
+  --bunnon4: rgb(62, 62, 62);
+  --hover4: rgb(85, 85, 85);
+  
+  /*borders*/
+  --lightborder: rgb(208, 208, 208);
+  --darkborder: rgb(18, 18, 18);
+  
+  /*Radio buttons*/
+  --lightradio: rgb(209, 215, 227);
+  --darkradio: rgb(63, 63, 63);
+  
+  /*Nav stuff*/
+  --lightlink: rgb(41, 41, 41);
+  --lightlinkhover: rgb(26, 115, 232);
+  --lightlinkselect: rgb(177, 177, 179);
+  --lightbuttonbg: rgb(248, 249, 254);
+  --lightbuttonbgfocus: rgb(225, 231, 251);
+  
+  --darklink: rgb(226, 226, 226);
+  --darklinkhover: rgb(26, 115, 232);
+  --darklinkselect: rgb(114, 114, 114);
+  --darkbuttonbg: rgba(52, 86, 255, 0.075);
+  --darkbuttonbgfocus: rgba(52, 86, 255, 0.357);
+  /*for darkmode nav bar*/
+  --darkhideshadow: rgba(39, 39, 39, 0.639);
+
+  /*3drendering page*/
+  --lighthideshadow: rgba(255, 255, 255, 0.64);
+  --yesrendershadow: rgba(32, 33, 36, 0.239);
+  /*hobbies and work*/
+  --lightwhiteshadow: rgba(255, 255, 255, 0.06); /*i hate this*/
+  --noshadown: transparent;
+  /*photos*/
+  --chilllight: rgb(239, 222, 210);
+  --light4nav: rgba(239, 222, 211, 0.71);
+  --chillcolorlight: rgba(220, 110, 37, 0.376);
+  --chillcolordark: rgba(245, 245, 247, 0.714);
+  
+  /*invert*/
+  --filteron: invert(0.8);
+  --filteroff: invert(0);
+}
+
+.light {
+  --text: var(--dark3);
+  --bg: var(--light0);
+  --nav: var(--light0nav);
+  --navmobile: var(--light0);
+  --cards: var(--light0);
+  --cards: var(--light4);
+  --green: var(--lightgreen);
+  --radioring: var(--lightradio);
+  --border: var(--lightborder);
+  --colortext: var(--bluetext);
+
+  --link: var(--lightlink);
+  --linkhover: var(--lightlinkhover);
+  --linkselect: var(--lightlinkselect);
+  --buttonbg: var(--lightbuttonbg);
+  --buttonbgfocus: var(--lightbuttonbgfocus);
+  --hideshadow: var(--lighthideshadow);
+
+  /*Contacts*/
+  --input: var(--light2);
+  --inputhover: var(--hover1);
+  --inputfocus: var(--focus1);
+  --bordertop: var(--light0);
+  --lightdarktext: var(--lighttext2);
+  --generaltext: var(--dark3);
+
+  /*About*/
+  --cardbg: var(--hover1);
+  --subtext: var(--lighttext2);
+  --iconfade: var(--hover1);
+
+  /*work*/
+  --buttonc: var(--bunnon3);
+  --buttonchover: var(--hover3);
+
+  /*hobbies*/
+  --workhobbyshadow: var(--noshadown);
+  --rendershadow: var(--yesrendershadow);
+  --drawbg: var(--light0);
+  --drawcarousel: var(--light2);
+  --photochill: var(--chilllight);
+  --photoNAV: var(--light4nav);
+  --photoNAVmobile: var(--chilllight);
+  --chillcolor: var(--chillcolorlight);
+
+  --filter: var(--filteroff);
+}
+
+.dark {
+  --text: var(--light1);
+  --bg: var(--dark0);
+  --nav: var(--dark1nav);
+  --navmobile: var(--dark1);
+  --cards: var(--dark1);
+  --green: var(--darkgreen);
+  --radioring: var(--darkradio);
+  --border: var(--darkborder);
+  --colortext: var(--greentext);
+
+  --link: var(--darklink);
+  --linkhover: var(--darklinkhover);
+  --linkselect: var(--darklinkselect);
+  --buttonbg: var(--darkbuttonbg);
+  --buttonbgfocus: var(--darkbuttonbgfocus);
+  --hideshadow: var(--darkhideshadow);
+
+
+  /*Contacts*/
+  --input: var(--dark1);
+  --inputhover: var(--hover2);
+  --inputfocus: var(--focus2);
+  --bordertop: var(--dark4);
+  --lightdarktext: var(--darktext1);
+  --generaltext: var(--light2);
+
+  /*About*/
+  --cardbg: var(--dark1);
+  --subtext: var(--light3);
+  --iconfade: var(--dark1);
+
+  /*work*/
+  --buttonc: var(--bunnon4);
+  --buttonchover: var(--hover4);
+
+  /*hobbies*/
+  --rendershadow: var(--noshadown);
+  --workhobbyshadow: var(--lightwhiteshadow);
+  --drawbg: var(--dark4);
+  --drawcarousel: var(--dark5);
+  --photochill: var(--dark0);
+  --photoNAV: var(--dark1nav);
+  --photoNAVmobile: var(--dark1);
+  --chillcolor: var(--chillcolordark);
+
+  --filter: var(--filteron);
+}
+
+span {
+  color: var(--text);
+}
+
+/*--------------------------------------*/
+
+body {
+  margin: 0;
+  font-family: 'arr_sans', Fallback, sans-serif;
+  background-color: var(--bg);
+}
+
+/*--------------------------------------*/
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 10;
+
+  justify-content: space-between;
+
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  background-color: var(--navmobile);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.navbarmenu {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 10;
+
+  justify-content: space-between;
+
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  background-color: var(--navmobile);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links {
+  font-size: 1.3rem;
+  margin: 0.8rem;
+  padding: 0.4rem;
+  border-radius: 4px;
+
+  text-decoration: none;
+  color: var(--link);
+  transition: opacity 0.3s;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.navbar-toggle {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#navabout {
+  user-select: none;
+}
+
+.menu {
+  width: 3rem;
+}
+
+.filterd {
+  filter: invert(1);
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+/*--------------HOVER EFFECTS--------------*/
+
+/*
+.sibling-fade:hover .hreftext:not(:hover) {
+  opacity: 0.5;
+}
+*/
+
+.hreftext:hover {
+  color: var(--linkhover);
+  background-color: var(--buttonbg);
+}
+
+.hreftext:focus {
+  background-color: var(--buttonbgfocus);
+}
+
+.currentsite {
+  color: var(--linkselect);
+  /*color: #32aa88*/
+}
+
+/*-----------------------------------------*/
+
+.active {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.hidded {
+  display: flex;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+/* -------------------------------------- */
+
+.title {
+  display: grid;
+}
+
+.bitTitles {
+  font-weight: bold;
+}
+.smlTitles {
+  font-size: 2rem;
+}
+/*--------------------------------------*/
+
+@media screen and (min-width: 601px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    align-items: center;
+    -webkit-box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.3);
+
+    background-color: var(--nav);
+    backdrop-filter: saturate(180%) blur(16px); /*or 20px*/
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(65, 65, 65, 0.1);
+  }
+
+  .navbarmenu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    align-items: center;
+    box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+    transition: 4s;
+  }
+}
+
+/*--------------------------------------*/
+
+@media (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.15);
+    font-size: 0rem;
+  }
+
+  .navbarmenu {
+    bottom: 0;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.15);
+    font-size: 0rem;
+    z-index: 1000;
+  }
+
+  .active {
+    display: block;
+    padding-bottom: 0rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .hidden {
+    display: flex;
+    padding: 0.5rem;
+  }
+
+  .hidded {
+    display: none;
+  }
+
+  .down {
+    bottom: 0;
+    padding: 0.5rem;
+    filter: var(--filter);
+  }
+
+  .menu {
+    width: 2.7rem;
+  }
+
+  .nav-links {
+    font-size: 2rem;
+  }
+
+  .off {
+    overflow: hidden;
+    max-height: 2rem;
+    transition: max-height 0.5s;
+  }
+
+  .on {
+    max-height: 30rem;
+    padding-bottom: 4rem;
+  }
+
+  .hideshadow {
+    box-shadow: 0px 0px 20px 14px var(--hideshadow);
+  }
+}
+
+.bottomContainer {
+  margin-bottom: 3rem;
+}

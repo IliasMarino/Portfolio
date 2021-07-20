@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <!-- Meta -->
+  <title>Ilias Marino</title>
+  <meta name="theme-color" content="#f2f2f2">
+  <meta name="author" content="Ilias">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="google" content="notranslate">
+
+  <link rel="icon" href="res/icons/logo.png" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4S7K69JXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S4S7K69JXM');
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+  <script async src="js/indextheme.js"></script>
+</head>
+
+<body class="light">
+  
+  <nav class="navbarmenu" id="shadow"> 
+    <a class="navbar-toggle down" id="js-navbar-toggle">
+      <div class="menu bodymovinanim"></div>    
+    </a> 
+         
+    <img class="hidden" id="navabout" src="res/icons/logo.png" style="width:2.7rem" alt="logo"/>
+  </nav>
+
+  <nav class="navbar off" id="animation">
+
+    <img class="hidded" src="res/icons/logo.png" style="width:3rem" alt="logo"/>
+
+    <ul class="main-nav sibling-fade" id="js-menu">
+      <li>
+        <a href="/index.html" class="nav-links hreftext currentsite">Start</a>
+      </li>
+      <li>
+        <a href="/page/work.html" class="nav-links hreftext">Projekte</a>
+      </li>
+      <li>
+        <a href="/page/hobbies.html" class="nav-links hreftext">Hobbys</a>
+      </li>
+      <li>
+        <a href="/page/about.html" class="nav-links hreftext">Über mich</a>
+      </li>
+      <li>
+        <a href="/page/contact.html" class="nav-links hreftext">Kontakt</a>
+      </li>
+    </ul>
+
+  <script>
+    let mainNav = document.getElementById("js-menu");
+    let navbar = document.getElementById("animation");
+    let navbarmenu = document.getElementById("shadow");
+    let navBarToggle = document.getElementById("js-navbar-toggle");
+
+    navBarToggle.addEventListener("click", function() {
+    mainNav.classList.toggle("active");
+    navbar.classList.toggle("on");
+    navbarmenu.classList.toggle("hideshadow");
+    });
+  </script> 
+
+  <script>
+    let iconMenu = document.querySelector('.bodymovinanim');
+
+    let animationMenu = bodymovin.loadAnimation({
+      container: iconMenu,
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: "https://raw.githubusercontent.com/thesvbd/Lottie-examples/master/assets/animations/menu.json"
+    });
+
+    var directionMenu = 1;
+      iconMenu.addEventListener('click', (e) => {
+      animationMenu.setDirection(directionMenu);
+      animationMenu.play();
+      directionMenu = -directionMenu;
+    });
+  </script>
+
+  </nav>
+
+
+  <div class="cntri">
+    <div class="parent">
+      <div class="box-flex work cardhover" onclick="location.href='/page/work.html';" style="cursor: pointer;">
+        <div class="link-icon nofilder" id="invert">
+          <img class="icons" src="/res/icons/index/compass.svg" alt="compass">
+        </div>
+        <span class="link-text de">Projekte</span>
+        <div class="link-divider"></div>
+        <div class="link-icon nofilder" id="invert">
+          <img class="icons arrow" src="/res/icons/index/arrow.svg" alt="next arrow">
+        </div>
+      </div>
+
+      <div class="box-flex about cardhover" onclick="location.href='/page/about.html';" style="cursor: pointer;">
+        <div class="link-icon nofilder" id="invert">
+          <img class="icons" src="/res/icons/index/bolt.svg" alt="bolt">
+        </div>
+        <span class="link-text de">Über mich</span>
+        <div class="link-divider"></div>
+        <div class="link-icon nofilder" id="invert">
+          <img class="icons arrow" src="/res/icons/index/arrow.svg" alt="next arrow">
+        </div>
+      </div>
+
+      <div class="box-flex contact cardhover" onclick="location.href='/page/contact.html';" style="cursor: pointer;">
+        <div class="link-icon nofilder" id="invert">
+          <img class="icons" src="/res/icons/index/roundabout.svg" alt="about">
+        </div>
+        <span class="link-text de">Kontakt</span>
+        <div class="link-divider"></div>
+        <div class="link-icon nofilder" id="invert">
+          <img class="icons arrow" src="/res/icons/index/arrow.svg" alt="next arrow">
+        </div>
+      </div>
+
+
+      <div class="bottombox-flex current">
+        <div class="image"></div>
+        <div class="link-divider"></div>
+
+          <div class="biglinkbox currenttext currentbox">
+            <span class="change-text cruwork">Derzeitige Beschäftigung</span>
+            
+            <div class="wrapone">
+              <img src="/res/icons/index/bullseye.svg" class="boxicons nofilder extrapush" id="invert" alt="decorative icon">
+            </div>
+              
+            <span class="small-text small-comment">Ich arbeite sehr hart an dieser Website</span>
+
+            
+            <div class="gridplacerone">
+              <span class="small-comment2 bitTitles">IN BEARBEITUNG</span>
+            </div>
+
+          
+            <div class="gridplacertwo">
+              <span class="testorino bitTitles">97%</span>
+            </div>
+
+          </div>
+      </div>
+
+      <div class="hello-flex hello">
+        <div class="box">
+          <div class="hellobox">
+            <span class="hello-text bitTitles de3 fontfix">Hey!</span>
+            <br>
+            <span class="hello-text de2 fontfix">Ich bin </span>
+            <span class="hello-text bitTitles de2 fontfix">Ilias</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebox-flex theme">
+        <div class="box settingsbox">
+          <span class="change-text">Sprach</span>
+          <img src="/res/icons/index/lang.svg" class="boxicons nofilder" id="invert" alt="decorative icon">
+          <div class="radioholder">
+            <label class="radio">
+                <input type="radio" name="langswitch" value="1" checked>
+                <span class="radio-text">Deutsch</span>
+            </label>
+            <label class="radio" onclick="location.href='/page/en/home.html';">
+                <input type="radio" name="langswitch" value="2">
+                <span class="radio-text">Englisch</span>
+            </label>
+        </div>
+        </div>
+      </div>
+
+      <div class="sidebox-flex language">
+        <div class="box settingsbox">
+          <span class="change-text">Design</span>
+          <img src="/res/icons/index/darkmode.svg" class="boxicons nofilder" id="invert" alt="decorative icon">
+          <div class="radioholder">
+            <label class="radio">
+                <input id="lightMode" type="radio" name="lightswitch" value="1">
+                <span class="radio-text">Hell</span>
+            </label>
+            <label class="radio">
+                <input id="darkMode" type="radio" name="lightswitch" value="2">
+                <span class="radio-text">Dunkel</span>
+            </label>
+        </div>
+        </div>
+      </div>
+
+      <div class="resizer">
+        <a>---------Hello there---------</a>
+      </div>
+      <div class="globalsize"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg);
+}
+
+a {
+  color: var(--text);
+  font-family: 'arr_sans', Fallback, sans-serif;
+}
+
+.received {
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+button:focus {
+  outline: none;
+}
+
+.cntri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-container {
+  margin-top: 1.5rem;
+  flex-grow: 1;
+  max-width: 50rem;
+}
+/*----------------------*/
+
+.grid-container1 {
+  flex-grow: 1;
+  max-width: 50rem;
+  margin-top: 4rem;
+}
+
+.cntri1 {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.title {
+  margin: 2.5rem;
+  font-size: 4.2rem;
+}
+
+/*----------------------*/
+
+.box {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "title"
+    "content";
+
+  margin: 1.5rem;
+  margin-top: 0;
+
+  margin-bottom: 2rem;
+}
+
+/*----------------------*/
+
+.button {
+  background-color: #34a853;
+  border: none;
+  color:  #fff;
+  padding: 0.6rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 7px;
+  display: flex;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1c6e32;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:active {
+  background-color: #2929298f;
+}
+
+.box_smaller {
+  background: var(--inputhover);
+  border-radius: 0px 0px 7px 7px;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  border-top: ridge 2px #fff;
+}
+
+/*----------------------*/
+
+@media (max-width: 607px) {
+  a {
+    color: #fff;
+  }
+
+  .title {
+    margin: 2.5rem 1.5rem 2.5rem 1.5rem;
+  }
+
+  .grid-container1 {
+    margin-top: 0rem;
+    background-color: #34a853;
+  }
+  .button {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .top-one {
+    margin-right: 0;
+  }
+
+  .top-two {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .email {
+    font-size: 1.5rem;
+  }
+
+  .box_smaller {
+    margin-bottom: 7rem;
+  }
+}
+

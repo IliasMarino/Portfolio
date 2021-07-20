@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta -->
+  <title>Photography</title>
+  <meta name="theme-color" content="#191919" />
+  <meta name="author" name="Ilias" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google" content="notranslate">
+
+  <link rel="icon" href="/res/icons/logo.png" />
+
+  <link rel="stylesheet" href="https://use.typekit.net/qrg0pyh.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="/css/photo.css" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4S7K69JXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S4S7K69JXM');
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+
+  <script async src="/js/theme.js"></script>
+</head>
+
+<body class="loading light">
+  <div class="loader">
+    <img src="/res/icons/loading.gif" alt="Loading..." />
+  </div>
+
+  <nav class="navbarmenu" id="shadow">
+    <span class="navbar-toggle down" id="js-navbar-toggle">
+      <div class="menu bodymovinanim"></div>
+    </span>
+
+    <img class="hidden" id="navabout" src="/res/icons/logo-back.png" onclick="goBack()" style="width:2.7rem" alt="logo" />
+  </nav>
+
+  <nav class="navbar off" id="animation">
+
+
+    <img class="hidded" src="/res/icons/logo-back.png" onclick="goBack()" style="width:3rem" alt="logo" />
+
+    <ul class="main-nav sibling-fade" id="js-menu">
+      <li>
+        <a href="/page/en/home.html" class="nav-links hreftext">Home</a>
+      </li>
+      <li>
+        <a href="/page/en/work.html" class="nav-links hreftext">Projects</a>
+      </li>
+      <li>
+        <a href="/page/en/hobbies.html" class="nav-links hreftext">Skills</a>
+      </li>
+      <li>
+        <a href="/page/en/about.html" class="nav-links hreftext">About</a>
+      </li>
+      <li>
+        <a href="/page/en/contact.html" class="nav-links hreftext">Contact</a>
+      </li>
+    </ul>
+
+    <script>
+      let mainNav = document.getElementById("js-menu");
+      let navbar = document.getElementById("animation");
+      let navbarmenu = document.getElementById("shadow");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+
+      navBarToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+        navbar.classList.toggle("on");
+        navbarmenu.classList.toggle("hideshadow");
+      });
+    </script>
+
+    <script>
+      let iconMenu = document.querySelector('.bodymovinanim');
+
+      let animationMenu = bodymovin.loadAnimation({
+        container: iconMenu,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: "https://raw.githubusercontent.com/thesvbd/Lottie-examples/master/assets/animations/menu.json"
+      });
+
+      var directionMenu = 1;
+      iconMenu.addEventListener('click', (e) => {
+        animationMenu.setDirection(directionMenu);
+        animationMenu.play();
+        directionMenu = -directionMenu;
+      });
+    </script>
+
+  </nav>
+  
+  <main>
+    <div data-scroll>
+      <div class="content">
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t1"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t2"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t3"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t1"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t2"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t3"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t1"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t3"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t2"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+        
+
+        <div class="item">
+          <div class="item__img-wrap">
+            <div class="item__img item__img--t2"></div>
+          </div>
+          <div class="item__caption">
+            <span class="item__caption-title loc">Location- </span>
+            <span class="item__caption-title">Germany</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/imagesloaded.pkgd.min.js"></script>
+  <script src="/js/photo.js"></script>
+
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden"; // class "loader hidden"
+    });
+  </script>
+</body>
+
+</html>

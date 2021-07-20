@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <title>Drawings</title>
+    <meta name="theme-color" content="#0e0e0e" />
+    <meta name="author" name="Ilias" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="google" content="notranslate">
+
+    <link rel="icon" href="/res/icons/logo.svg" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/drawings.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Niramit:400,600,700"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4S7K69JXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S4S7K69JXM');
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+
+    <script async src="/js/theme.js"></script>
+  </head>
+
+  <body class="light">
+    <div class="loader">
+      <img src="/res/icons/loading.gif" alt="Loading..." />
+    </div>
+
+    <nav class="navbarmenu" id="shadow"> 
+      <span class="navbar-toggle down" id="js-navbar-toggle">
+        <div class="menu bodymovinanim"></div>    
+      </span> 
+           
+      <img class="hidden" id="navabout" src="/res/icons/logo-back.png" onclick="goBack()" style="width:2.7rem" alt="logo"/>
+    </nav>
+  
+    <nav class="navbar off" id="animation">
+  
+  
+      <img class="hidded" src="/res/icons/logo-back.png" onclick="goBack()" style="width:3rem" alt="logo"/>
+  
+      <ul class="main-nav sibling-fade" id="js-menu">
+        <li>
+          <a href="/page/en/home.html" class="nav-links hreftext">Home</a>
+        </li>
+        <li>
+          <a href="/page/en/work.html" class="nav-links hreftext">Projects</a>
+        </li>
+        <li>
+          <a href="/page/en/hobbies.html" class="nav-links hreftext">Skills</a>
+        </li>
+        <li>
+          <a href="/page/en/about.html" class="nav-links hreftext">About</a>
+        </li>
+        <li>
+          <a href="/page/en/contact.html" class="nav-links hreftext">Contact</a>
+        </li>
+      </ul>
+  
+    <script>
+      let mainNav = document.getElementById("js-menu");
+      let navbar = document.getElementById("animation");
+      let navbarmenu = document.getElementById("shadow");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+  
+      navBarToggle.addEventListener("click", function() {
+      mainNav.classList.toggle("active");
+      navbar.classList.toggle("on");
+      navbarmenu.classList.toggle("hideshadow");
+      });
+    </script> 
+  
+    <script>
+      let iconMenu = document.querySelector('.bodymovinanim');
+  
+      let animationMenu = bodymovin.loadAnimation({
+        container: iconMenu,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: "https://raw.githubusercontent.com/thesvbd/Lottie-examples/master/assets/animations/menu.json"
+      });
+  
+      var directionMenu = 1;
+        iconMenu.addEventListener('click', (e) => {
+        animationMenu.setDirection(directionMenu);
+        animationMenu.play();
+        directionMenu = -directionMenu;
+      });
+    </script>
+  
+    </nav>
+
+    <div class="carousel">
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/OQZnG0x.jpg" alt="Golem drawing" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/chKbTlP.jpg" alt="Snowman drawing" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/0KCppNG.jpg" alt="Citylight drawing" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/MssAY7P.jpg" alt="Cat drawing" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/C68namp.jpg" alt="Italy drawing" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/Le5fp7c.jpg" alt="Helicopter drawing" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/kMsTX4E.jpg" alt="Gravity Falls drawing" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/CB48EsK.jpg" alt="Castle drawing" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/8soPYdV.jpg" alt="Collection of drawings" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://i.imgur.com/yR2Ftri.jpg" alt="Collection of drawings" />
+      </div>
+    </div>
+  </body>
+  <script src="/js/imagesloaded.pkgd.min.js"></script>
+  <script src="/js/flickity.js"></script>
+
+  <script>
+    window.addEventListener("load", function() {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden"; // class "loader hidden"
+    });
+  </script>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <title>About</title>
+  <meta name="theme-color" content="#f2f2f7" />
+  <meta name="author" content="Ilias" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="google" content="notranslate">
+
+  <link rel="icon" href="/res/icons/logo.png" />
+
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/about.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/qrg0pyh.css" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4S7K69JXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S4S7K69JXM');
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+
+  <script async src="/js/theme.js"></script>
+
+</head>
+
+<body class="light">
+  <nav class="navbarmenu" id="shadow">
+    <span class="navbar-toggle down" id="js-navbar-toggle">
+      <div class="menu bodymovinanim"></div>
+    </span>
+
+    <img class="hidden" id="navabout" src="/res/icons/logo.png" onclick="goBack()" style="width:2.7rem" alt="logo"/>
+  </nav>
+
+  <nav class="navbar off" id="animation">
+
+    <img class="hidded" src="/res/icons/logo.png" onclick="goBack()" style="width:3rem" alt="logo"/>
+
+    <ul class="main-nav sibling-fade" id="js-menu">
+      <li>
+        <a href="/page/en/home.html" class="nav-links hreftext">Home</a>
+      </li>
+      <li>
+        <a href="/page/en/work.html" class="nav-links hreftext">Projects</a>
+      </li>
+      <li>
+        <a href="/page/en/hobbies.html" class="nav-links hreftext">Skills</a>
+      </li>
+      <li>
+        <a href="/page/en/about.html" class="nav-links hreftext currentsite">About</a>
+      </li>
+      <li>
+        <a href="/page/en/contact.html" class="nav-links hreftext">Contact</a>
+      </li>
+    </ul>
+
+    <script>
+      let mainNav = document.getElementById("js-menu");
+      let navbar = document.getElementById("animation");
+      let navbarmenu = document.getElementById("shadow");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+
+      navBarToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+        navbar.classList.toggle("on");
+        navbarmenu.classList.toggle("hideshadow");
+      });
+    </script>
+
+    <script>
+      let iconMenu = document.querySelector('.bodymovinanim');
+
+      let animationMenu = bodymovin.loadAnimation({
+        container: iconMenu,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: "https://raw.githubusercontent.com/thesvbd/Lottie-examples/master/assets/animations/menu.json"
+      });
+
+      var directionMenu = 1;
+      iconMenu.addEventListener('click', (e) => {
+        animationMenu.setDirection(directionMenu);
+        animationMenu.play();
+        directionMenu = -directionMenu;
+      });
+    </script>
+
+  </nav>
+
+  <div class="cntri1">
+    <div class="grid-container1">
+      <div class="title">
+        <a class="bitTitles">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cntri">
+    <div class="grid-container">
+
+      <div class="post">
+        <div class="post_content">
+          <h3 class="content_title">My name is Ilias</h3>
+          <img class="content_avatar" src="/res/images/about2.jpg" alt="image of me"/>
+          <span class="content_text" id="imgBreak">
+            and I'm a web developer from Germany.
+          <br><br>
+            I like learning about new things and I've started teaching myself web development in october of 2019. Since then I've been working on myself and my skills, im skilled in graphic design, video and photo editing which are also my main hobbies.
+          <br><br>
+            Below you can see all the languages, tools and software I'm familiar with.          
+          </span>
+        </div>
+      </div>
+
+      <div class="post" id="noImgPost">
+        <div class="post_smaller">
+          <div class="box-flex cardhover" onclick="location.href='/page/en/hobbies.html';" style="cursor: pointer;">
+            <div class=" link-icon">
+            <img class="icons" src="/res/icons/index/bolt.svg" alt="bolt">
+          </div>
+          <a class="link-textAbout">Skills</a>
+          <div class="link-divider"></div>
+          <div class="link-icon">
+            <img class="icons arrow" src="/res/icons/index/arrow.svg" alt="next arrow">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="post" id="noImgPost">
+      <div class="post_content">
+        <h3 class="content_title">Software</h3>
+
+        <div class="content_text software">
+          <img class="softIcon" src="/res/icons/about/Ps.png" alt="Adobe Photoshop">
+          <img class="softIcon" src="/res/icons/about/Pr.png" alt="Adobe Premiere Pro">
+          <img class="softIcon" src="/res/icons/about/Lr.png" alt="Adobe Lightroom">
+          <img class="softIcon" src="/res/icons/about/Au.png" alt="Adobe Audition">
+          <img class="softIcon" src="/res/icons/about/Ai.png" alt="Adobe illustrator">
+          <img class="softIcon" src="/res/icons/about/Xd.png" alt="Adobe XD">          
+          <img class="softIcon" src="/res/icons/about/Vegas.png" alt="Sony Vegas Pro">
+          <img class="softIcon" src="/res/icons/about/c4d.png" alt="Cinema 4D">
+          <img class="softIcon" src="/res/icons/about/fig.png" alt="Figma">
+          <img class="softIcon" src="/res/icons/about/gid.png" alt="Git">
+          <img class="softIcon" src="/res/icons/about/eclipse2.png" alt="Eclipse">
+          <img class="softIcon" src="/res/icons/about/code.png" alt="Visual Studio Code">
+          <img class="softIcon" src="/res/icons/about/PowerPoint.png" alt="PowerPoint">
+          <img class="softIcon" src="/res/icons/about/Excel.png" alt="Excel">
+          <img class="softIcon" src="/res/icons/about/Word.png" alt="Word">
+
+          </div>
+        <div class="content_text gradient"></div>
+      </div>
+    </div>
+
+    <div class="post" id="noImgPost">
+      <div class="post_content">
+        <h3 class="content_title">Programming languages and frameworks</h3>
+
+        <div class="content_text software">
+          <img class="softIcon" src="/res/icons/about/java.png" alt="Java">
+
+          <img class="softIcon" src="/res/icons/about/html5.png" alt="HTML">
+          <img class="softIcon" src="/res/icons/about/css.png" alt="CSS">
+          <img class="softIcon" src="/res/icons/about/js.png" alt="Java Script">
+        </div>
+
+          <!--
+          <span class="content_text">
+            Java<br>
+            HTML<br>
+            CSS<br>
+            Java Scrip<br>
+          </span>
+        -->
+
+      </div>
+    </div>
+
+    <div class="post" id="noImgPost">
+      <div class="post_content">
+        <h3 class="content_title">Languages</h3>
+
+        <span class="content_text">
+          German<br>
+          <div class="meter">
+            <span style="width: 100%"></span>
+          </div>
+          <br> 
+          English<br>   
+          <div class="meter">
+            <span style="width: 95%"></span>
+          </div>
+          <br>
+          <!--
+            Arabic<br>   
+            <div class="meter">
+              <span style="width: 60%"></span>
+            </div>
+            <br>
+            Italian<br>   
+            <div class="meter">
+              <span style="width: 5%"></span>
+            </div>
+          -->
+        </span>
+      </div>
+    </div>
+
+    <div class="post last" id="noImgPost">
+      <div class="post_smaller">
+        <div class="box-flex cardhover" onclick="location.href='/page/en/contact.html';" style="cursor: pointer;">
+          <div class=" link-icon">
+          <img class="icons" src="/res/icons/index/roundabout.svg" alt="about">
+        </div>
+        <a class="link-textAbout">Contact</a>
+        <div class="link-divider"></div>
+        <div class="link-icon">
+          <img class="icons arrow" src="/res/icons/index/arrow.svg" alt="next arrow">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+</body>
+
+</html>

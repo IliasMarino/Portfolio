@@ -1,0 +1,154 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg);
+}
+
+a {
+  color: var(--text);
+  font-family: 'arr_sans', Fallback, sans-serif;
+}
+
+.cntri {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 4rem;
+}
+
+.cntri1 {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-container {
+  flex-grow: 1;
+  max-width: 70rem;
+  margin-top: 4rem;
+}
+/* ------------------ */
+
+.title {
+  margin: 2.5rem 2.5rem 0 2.5rem;
+  font-size: 4.2rem;
+}
+
+.cardtitle {
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.divider {
+  height: 2px;
+  background: var(--border);
+  align-self: stretch;
+}
+
+/* --------CARDS---------- */
+
+.card {
+  margin: 0rem 1rem 5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 0fr;
+  grid-template-areas: "img" "text" "button";
+
+  box-shadow: 0 10px 16px 0px rgba(32, 33, 36, 0.157);
+  height: 30rem;
+  border-radius: 16px;
+  background-color: var(--cards);
+}
+
+.image {
+  border-radius: 16px 16px 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ------------------ */
+
+.imgurl4 {
+  background-image: url(/res/images/render2.jpg);
+}
+.imgurl3 {
+  background-image: url(/res/images/render1.jpg);
+}
+.imgurl2 {
+  background-image: url(/res/images/render2.jpg);
+}
+.imgurl1 {
+  background-image: url(/res/images/render1.jpg);
+}
+
+/* ------------------ */
+
+@media (max-width: 1000px) {
+  .gridFix {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .grid-container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .grid-container1 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .gridFix {
+    margin-top: 0rem;
+  }
+  .card {
+    margin: 0rem 1rem 2rem 1rem;
+    height: 24rem;
+  }
+
+  .grid-container {
+    margin-top: 0rem;
+  }
+
+  .title {
+    margin: 1rem;
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .imgurl4 {
+  }
+
+  .imgurl3 {
+  }
+
+  .imgurl2 {
+  }
+
+  .imgurl1 {
+  }
+
+  .cardtitle {
+    margin: 0.3rem;
+  }
+}
